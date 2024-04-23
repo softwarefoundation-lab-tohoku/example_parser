@@ -11,9 +11,8 @@
 %token LPAR RPAR 
 %token EOF 
 
-%start main expr
+%start main 
 %type <Syntax.expr> main
-%type <Syntax.expr> expr 
 %% 
 
 main: 
