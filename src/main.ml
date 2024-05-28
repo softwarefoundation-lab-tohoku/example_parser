@@ -5,6 +5,7 @@ let string_of_position : Lexing.position -> string = fun pos ->
 
 let () = 
   let lexbuf = Lexing.from_channel stdin in 
+  let _ = Lexing.set_filename lexbuf "<interactive>" in 
   try 
     (* let () = print_string "> " in 
     let () = flush stdout in  *)
